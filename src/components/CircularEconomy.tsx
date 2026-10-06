@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShoppingBag, Upload, RefreshCw, Heart } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const CircularEconomy: React.FC = () => {
   return (
@@ -12,9 +13,9 @@ export const CircularEconomy: React.FC = () => {
           <div className="absolute inset-6 rounded-full border border-[#D5E3D9]" />
 
           {/* Center Brand */}
-          <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-white shadow-lg border border-[#D7E3DA] flex flex-col items-center justify-center z-10">
-            <span className="text-xl sm:text-2xl font-black text-[#141C17] tracking-tight">REUSE</span>
-            <span className="text-[10px] font-semibold text-[#2D6043] uppercase tracking-wider mt-0.5">Continuous</span>
+          <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full bg-white shadow-lg border border-[#D7E3DA] flex flex-col items-center justify-center z-10 p-3">
+            <Logo className="h-6 sm:h-7" />
+            <span className="text-[10px] font-semibold text-[#2D6043] uppercase tracking-wider mt-1">Continuous</span>
           </div>
 
           {/* Node 1: BUY (Top) */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Logo } from './Logo';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -11,12 +12,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-14 border-b border-[#222F26]">
           {/* Brand Info */}
           <div className="md:col-span-5 flex flex-col items-start">
-            <a href="#" className="text-2xl font-black tracking-tight text-white mb-1">
-              REUSE
+            <a href="#" className="mb-4 inline-block">
+              <Logo isDark={true} className="h-8" showTagline={true} />
             </a>
-            <span className="text-xs font-medium text-[#7DA18B] tracking-wide mb-4">
-              Smarter Secondhand
-            </span>
             <p className="text-sm text-[#849488] leading-relaxed max-w-sm">
               An AI-assisted secondhand marketplace built to help people buy, sell, trade, and donate.
             </p>

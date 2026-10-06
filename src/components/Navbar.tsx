@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Logo } from './Logo';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,18 +34,18 @@ export const Navbar: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[#FAF9F5]/90 backdrop-blur-md py-3.5 shadow-xs border-b border-[#121814]/5'
+          ? 'bg-[#FAF9F5]/90 backdrop-blur-md py-3 shadow-xs border-b border-[#121814]/5'
           : 'bg-transparent py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-        {/* Zone 1: Brand wordmark */}
+        {/* Zone 1: Official Logo */}
         <a
           href="#"
-          className="text-2xl font-extrabold tracking-tight text-[#161D19] transition-opacity hover:opacity-80"
+          className="flex items-center transition-opacity hover:opacity-85"
           aria-label="REUSE Home"
         >
-          REUSE
+          <Logo className="h-7 sm:h-8" />
         </a>
 
         {/* Zone 2: Navigation Links */}

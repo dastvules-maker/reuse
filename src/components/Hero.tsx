@@ -1,6 +1,7 @@
 import React from 'react';
 import { Play, Sparkles, CheckCircle2, User, ChevronDown, Camera, ArrowDown } from 'lucide-react';
 import { ASSETS } from '../assets';
+import { Logo } from './Logo';
 
 interface HeroProps {
   onExploreFeatures: () => void;
@@ -60,8 +61,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreFeatures, onSeeHowItWorks }
 
             {/* Orbit Center Brand Badge */}
             <div className="absolute z-20 flex flex-col items-center justify-center text-center p-4">
-              <span className="text-2xl font-black tracking-tight text-[#141C17]">REUSE</span>
-              <span className="text-[11px] font-medium text-[#5A685F] tracking-wide mt-0.5">Smarter Secondhand</span>
+              <Logo className="h-9 sm:h-11" showTagline={true} />
             </div>
 
             {/* Orbit Item 1: Camera (Top-Left) */}
